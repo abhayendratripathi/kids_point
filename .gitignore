@@ -1,0 +1,168 @@
+# ═══════════════════════════════════════════════
+#   KidPoints — .gitignore
+#   Node.js + Express + SQLite + React
+# ═══════════════════════════════════════════════
+
+
+# ── DATABASE ─────────────────────────────────
+server/kidpoints.db
+server/kidpoints.db-shm
+server/kidpoints.db-wal
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+
+# ── ENVIRONMENT VARIABLES ────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+server/.env
+client/.env
+
+
+# ── NODE MODULES ─────────────────────────────
+node_modules/
+server/node_modules/
+client/node_modules/
+
+
+# ── REACT BUILD OUTPUT ────────────────────────
+client/build/
+client/dist/
+
+
+# ── NPM / YARN LOGS ──────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+.pnp.*
+.yarn/
+package-lock.json
+yarn.lock
+
+
+# ── OS FILES ─────────────────────────────────
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ── EDITOR & IDE ──────────────────────────────
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# IntelliJ / WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+Session.vim
+.netrwhist
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Emacs
+\#*\#
+.\#*
+
+
+# ── LOGS ─────────────────────────────────────
+logs/
+*.log
+server/logs/
+combined.log
+error.log
+
+
+# ── TESTING ──────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+jest_html_reporters.html
+
+
+# ── CACHE ────────────────────────────────────
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.next/
+.nuxt/
+.turbo/
+
+
+# ── DEPLOYMENT / CI ──────────────────────────
+.vercel/
+.netlify/
+.railway/
+dist/
+out/
+
+
+# ── TEMPORARY FILES ───────────────────────────
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.pid
+*.seed
+*.pid.lock
+
+
+# ── SECRETS / KEYS ───────────────────────────
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+secrets/
+private/
